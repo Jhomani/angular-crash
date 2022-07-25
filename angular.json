@@ -104,21 +104,12 @@
               "**/node_modules/**"
             ]
           }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-crash:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "angular-crash:serve:production"
-            }
-          }
         }
       }
     }
   },
-  "defaultProject": "angular-crash"
+  "defaultProject": "angular-crash",
+  "cli": {
+    "analytics": false
+  }
 }

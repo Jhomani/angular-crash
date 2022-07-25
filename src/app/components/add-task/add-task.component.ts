@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { UiService } from '../../services/ui.service';
 import { Subscription } from 'rxjs';
-import { Task } from '../../Task';
+import { Task } from '../../store/models/Task.model';
 
 @Component({
   selector: 'app-add-task',

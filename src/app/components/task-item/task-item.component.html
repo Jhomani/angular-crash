@@ -5,11 +5,10 @@
 >
   <h3>
     {{ task.text }}
-    <fa-icon
+    <span
       (click)="onDelete(task)"
       [ngStyle]="{ color: 'red' }"
-      [icon]="faTimes"
-    ></fa-icon>
+    >{{faTimes}}</span>
   </h3>
   <p>{{ task.day }}</p>
 </div>
